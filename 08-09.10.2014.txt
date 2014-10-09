@@ -1,0 +1,498 @@
+[8/10/2014 9:43:40 AM] Thành VCCopr - Cloud Solution: Các anh ơi, em có một thắc mắc ạ, tại sao ng ta lại khuyên khi cài swift ít nhất nên sử dụng 5 zone ạ
+[8/10/2014 9:47:37 AM] tieungao88: Swift luu các bản backup thành 3 bản nên ít nhất phải có 3 Zone. Còn 5 zone mình nghĩ để cho an toàn khi một zone fail thì vẫn duy trì được 3 bản backup trên các zone
+[8/10/2014 9:48:28 AM] Thành VCCopr - Cloud Solution:  Swift luu các bản backup thành 3 bản nên ít nhất phải có 3 Zone.  => cái này là do mình đặt khi build ring mà anh
+[8/10/2014 9:48:40 AM] Thành VCCopr - Cloud Solution: ví dụ anh chỉ sao lưu thành 2 bản thôi
+[8/10/2014 9:48:49 AM] Thành VCCopr - Cloud Solution: thì số zone cần thiết chỉ là 3
+[8/10/2014 9:49:00 AM] tieungao88: :) thì theo khyến cáo là 3 bản mà
+[8/10/2014 9:49:09 AM] Thành VCCopr - Cloud Solution: Vâng
+[8/10/2014 9:49:10 AM] tieungao88: nếu bạn đặt ít hơn cũng được
+[8/10/2014 9:49:32 AM] tieungao88: nhưng 3 bản thì khả năng lỗi sẽ giảm đi
+[8/10/2014 9:49:37 AM] Thành VCCopr - Cloud Solution: nhưng có lẽ 5 zone chỉ dành cho hệ thống lớn
+[8/10/2014 9:49:54 AM] Thành VCCopr - Cloud Solution: :D
+[8/10/2014 9:49:57 AM] tieungao88: :)
+[8/10/2014 9:50:00 AM] Thành VCCopr - Cloud Solution: em nghĩ thế có đúng không ạ
+[8/10/2014 9:50:15 AM] Thành VCCopr - Cloud Solution: chứ có một số node nhỏ thì ...@.@
+[8/10/2014 9:51:07 AM] Thành VCCopr - Cloud Solution: Khi mình upload object lên, nó sẽ lưu random anh nhỉ :|
+[8/10/2014 9:51:29 AM] Quân Hoàng: có thuật toán hết
+[8/10/2014 9:51:33 AM] Quân Hoàng: random rồi sau này đọc lại
+[8/10/2014 9:51:38 AM] Quân Hoàng: sao nó biết object ở chỗ nào
+[8/10/2014 9:51:43 AM] Thành VCCopr - Cloud Solution: vâng
+[8/10/2014 9:51:58 AM] Thành VCCopr - Cloud Solution: sau khi lưu xong mình có thể check được
+[8/10/2014 9:52:16 AM] Thành VCCopr - Cloud Solution: nhưng thuật toán để chọn zone lưu của nó chắc p đọc code
+[8/10/2014 9:52:28 AM] Tô Thành Công: Chào Tú thợ điện nhé => Tiến
+[8/10/2014 9:52:38 AM] tieungao88: :D
+[8/10/2014 9:53:09 AM] tieungao88: chào anh congfa
+[8/10/2014 9:53:15 AM] Thành VCCopr - Cloud Solution: há há
+[8/10/2014 9:53:19 AM] Thành VCCopr - Cloud Solution: anh Công fa
+[8/10/2014 9:53:26 AM] tieungao88: :)
+[8/10/2014 9:53:45 AM] tieungao88: anh y thick đá bòng nên anh thường gọi là anh công FA
+[8/10/2014 9:53:51 AM] tieungao88: bóng
+[8/10/2014 9:53:53 AM] tieungao88: ^^
+[8/10/2014 9:54:13 AM] Thành VCCopr - Cloud Solution: :D
+[8/10/2014 9:54:23 AM] Thành VCCopr - Cloud Solution: em cũng thích đá bogns :D
+[8/10/2014 9:54:43 AM] Thành VCCopr - Cloud Solution: suốt ngày bị ng yêu dỗi vì đi đá bóng muộn :D
+[8/10/2014 9:58:13 AM] Tô Thành Công: vụ Swift này có vẻ còn tiếp diễn dài dài
+[8/10/2014 9:58:31 AM] Tô Thành Công: anh mới comment 1 bài về vấn đề hợp nhất stogage cho cộng đồng đó
+[8/10/2014 9:58:37 AM] Tô Thành Công: anh em có gì trao đổi nhé
+[8/10/2014 9:59:41 AM] Thành VCCopr - Cloud Solution: (handshake)
+[8/10/2014 9:59:52 AM] Thành VCCopr - Cloud Solution: (lalala)
+[8/10/2014 10:00:21 AM] Thành VCCopr - Cloud Solution: [09:58:31] Tô Thành Công: anh mới comment 1 bài về vấn đề hợp nhất stogage cho cộng đồng đó => thí chủ có link không ạ
+[8/10/2014 10:00:30 AM] Thành VCCopr - Cloud Solution: hay là mấy link trước anh gửi hả anh
+[8/10/2014 10:03:02 AM] Tô Thành Công: openvstorage
+[8/10/2014 10:03:09 AM] Tô Thành Công: tren goups fb cua bon no ay
+[8/10/2014 10:03:15 AM] Tô Thành Công: cac em vao chem cho rom ra nhe
+[8/10/2014 10:04:12 AM] Thành VCCopr - Cloud Solution: :D
+[8/10/2014 10:04:14 AM] Thành VCCopr - Cloud Solution: vaang
+[8/10/2014 10:05:23 AM] Tô Thành Công: tren day co nhieu bai ve storage phet
+[8/10/2014 10:05:41 AM] Tô Thành Công: @Quân mới demo giao diện vụ CEPH
+[8/10/2014 10:27:25 AM] Thành VCCopr - Cloud Solution: dạo này em hay gặp lỗi này
+[8/10/2014 10:27:26 AM] Thành VCCopr - Cloud Solution: Oct  8 03:23:05 proxy proxy-server: ERROR with Account server 10.2.28.23:6002/sdb1 re: Trying to HEAD /v1/AUTH_5144feb174154b30881712561ebd767f: Connection refused (txn: tx84a445df29144e07a46e5-005434ae19) (client_ip: 10.2.28.22)
+Oct  8 03:23:05 proxy proxy-server: Account HEAD returning 503 for [] (txn: tx84a445df29144e07a46e5-005434ae19) (client_ip: 10.2.28.22)
+[8/10/2014 10:27:35 AM] Thành VCCopr - Cloud Solution: các anh đã bao h gặp chưa ạ
+[8/10/2014 10:28:25 AM] Thành VCCopr - Cloud Solution: đây là bước build ring cho một storage của em
+[8/10/2014 10:28:27 AM] Thành VCCopr - Cloud Solution: swift-ring-builder account.builder add z1-10.2.28.23:6002R10.2.28.23:6005/sdb1 100
+swift-ring-builder container.builder add z1-10.2.28.23:6001R10.2.28.23:6004/sdb1 100
+swift-ring-builder object.builder add z1-10.2.28.23:6000R10.2.28.23:6003/sdb1 100
+[8/10/2014 11:38:09 AM] Tô Thành Công: Có ai hỏi anh vụ cài đặt swift theo kiểu standalone
+[8/10/2014 11:54:27 AM] Tô Thành Công: Thử cái này xem Thành nhé
+[8/10/2014 11:54:27 AM] Tô Thành Công: https://github.com/cschwede/django-swiftbrowser
+[8/10/2014 11:55:30 AM] Thành VCCopr - Cloud Solution: Cái lỗi trên em tìm được là do một số storage service chưa được start. em start lên thì nó lại báo 8 04:31:40 proxy proxy-server: Account HEAD returning 503 for [] (txn: tx40ad3c99002d40f3926d9-005434be2c) (client_ip: 10.2.28.22)
+[8/10/2014 11:55:43 AM] Thành VCCopr - Cloud Solution: em đang search anh ạ
+[8/10/2014 11:55:44 AM] Thành VCCopr - Cloud Solution: :|
+[9:47:36 AM] Tô Thành Công: Server cua openstack nay lam sao ay
+[9:47:49 AM] Tô Thành Công: mang VNPT vao toan quay quay, cac ba co van de gi ko
+[10:16:53 AM] Quân Hoàng: git.openstack.org clone từ chỗ này cũng chạam
+[10:16:56 AM] Quân Hoàng: có 4KB/s
+[1:11:42 PM] Tô Thành Công: Chậm voãi ra
+[3:40:51 PM] Quân Hoàng: cuối cùng cũng cài dc trove
+[3:40:55 PM] Quân Hoàng: tạo DB thành công
+[3:41:01 PM] Quân Hoàng: vã quá (chuckle)
+[4:06:59 PM] Tô Thành Công: ;)
+[4:07:01 PM] Tô Thành Công: (y)
+[4:07:08 PM] Thành VCCopr - Cloud Solution: :x
+[4:07:10 PM] Tô Thành Công: Có docs ko em oai
+[4:08:07 PM] Tô Thành Công: anh có cái CEPH đây :v
+[4:08:08 PM] Tô Thành Công: https://github.com/longsube/OpenStack--Glance--Cinder-Ceph-Backend-_-2-NET/blob/master/hd-ceph-backend-openstack.md
+[4:09:10 PM] Tô Thành Công: có quà có quà
+[4:15:34 PM] Quân Hoàng: docs ko xài dc
+[4:16:19 PM] Tô Thành Công: uh
+[4:16:26 PM] Tô Thành Công: y anh a lam doc chua
+[4:16:28 PM] Tô Thành Công: :D
+[4:16:30 PM] Quân Hoàng: để rảnh e viết 1 bài vè trove
+[4:16:34 PM] Tô Thành Công: ok :D
+[4:16:53 PM] Quân Hoàng: bài ceph đó lính a a viết ả
+[4:16:53 PM] Quân Hoàng: :D
+[4:16:59 PM] Tô Thành Công: uh
+[4:17:04 PM] Tô Thành Công: thang Long day, dong nghiep thoi
+[4:17:10 PM] Tô Thành Công: anh sep gi dau
+[4:17:11 PM] Tô Thành Công: :D
+[4:17:16 PM] Tô Thành Công: no lo mang storage ma
+[4:17:17 PM] Tô Thành Công: :D
+[4:17:21 PM] Tô Thành Công: anh lo mang linux
+[4:17:25 PM] Tô Thành Công: @Thanh oi
+[4:17:32 PM] Thành VCCopr - Cloud Solution: dạ
+[4:17:33 PM] Tô Thành Công: lam vai bai ve shinken cho OpenStack ko
+[4:17:43 PM] Thành VCCopr - Cloud Solution: là sao hả anh
+[4:18:20 PM] Tô Thành Công: a, anh em co bai nao share len mang choi
+[4:19:15 PM] Thành VCCopr - Cloud Solution: em chưa viết bài nào về shinken bao giờ
+[4:19:16 PM] Thành VCCopr - Cloud Solution: :|
+[4:19:25 PM] Tô Thành Công: team anh viet 1 bai roi do
+[4:19:31 PM] Tô Thành Công: phan basic nhat thoi
+[4:19:36 PM] Thành VCCopr - Cloud Solution: vâng
+[4:19:51 PM] Thành VCCopr - Cloud Solution: bản 2.0 hả anh
+[4:19:56 PM] Tô Thành Công: anh chua check lai
+[4:20:03 PM] Tô Thành Công: may hom nua chung no kha kha bang bon em
+[4:20:07 PM] Tô Thành Công: cho vao groups nay choi voi nhe
+[4:20:08 PM] Tô Thành Công: :D
+[4:20:11 PM] Tô Thành Công: de anh em trao doi
+[4:20:17 PM] Thành VCCopr - Cloud Solution: ặc
+[4:20:19 PM] Tô Thành Công: dong ky thuat thi minh cap nhat nhanh duoc
+[4:20:24 PM] Thành VCCopr - Cloud Solution: có gì đâu mà kha khá hả anh
+[4:20:28 PM] Tô Thành Công: @Tuan - VietStack co do ko
+[4:20:33 PM] Tô Thành Công: anh Tuan dai dien groups do
+[4:20:33 PM] Thành VCCopr - Cloud Solution: anh cứ cho vào luôn cũng được
+[4:20:40 PM] Tô Thành Công: uh, de no hieu khai niem da
+[4:20:45 PM] Thành VCCopr - Cloud Solution: Vâng
+[4:20:45 PM] Tô Thành Công: co cu dang lam swift day
+[4:20:49 PM] Tô Thành Công: no cung cai roi
+[4:20:58 PM] Tô Thành Công: anh trao doi vu cai tren tung node voi 4 node roi
+[4:21:02 PM] Tô Thành Công: no bao co tai lieu
+[4:21:25 PM] *** Tô Thành Công added VDC-IT Thuc Tap - Tuan Anh ***
+[4:21:26 PM] *** VDC-IT Thuc Tap - Tuan Anh can't be added until they accept your contact request. ***
+[4:22:11 PM] *** Tô Thành Công added VDC-IT Thuc Tap - Tuan Anh ***
+[4:22:11 PM] *** VDC-IT Thuc Tap - Tuan Anh can't be added until they accept your contact request. ***
+[4:24:33 PM] *** Tô Thành Công added VDC-IT Thuc Tap - Tuan Anh ***
+[4:24:44 PM] Tô Thành Công: Anh gioi thieu ban Tuan anh, dong nghiep cung anh
+[4:25:11 PM] Tô Thành Công: dang lam mang Swift o team anh, mong muon giao luu cung anh em. Co gi Tuan approve giup anh nhe
+[4:25:18 PM] Thành VCCopr - Cloud Solution: ặc
+[4:25:28 PM] Thành VCCopr - Cloud Solution: em chát nhầm ô anh CÔng ơi
+[4:25:33 PM] Thành VCCopr - Cloud Solution: :D
+[4:25:41 PM] Hung Eric: okie
+[4:25:44 PM] Hung Eric: day day
+[4:25:50 PM] Hung Eric: tinh hinh a e xom qua
+[4:25:53 PM] Hung Eric: mau qua
+[4:25:54 PM] Hung Eric: :D
+[4:26:17 PM] Trần Tuấn Anh: em chào các bác! em đang tìm hiểu swift, mong đc sự giúp đỡ của các bác! :D
+[4:27:37 PM] Tô Thành Công: :)
+[4:31:48 PM] Thành VCCopr - Cloud Solution: (wave)
+[4:32:12 PM] *** Trần Tuấn Anh has changed the conversation topic to "Swift + Linux" ***
+[4:32:30 PM] Hung Eric: ay
+[4:32:45 PM] Hung Eric: e nghi cu de la openstack+linux thi hay hon
+[4:32:49 PM] Hung Eric: a Cong thay sao
+[4:32:51 PM] Hung Eric: cho no cu the
+[4:33:21 PM] Thành VCCopr - Cloud Solution: (y)
+[4:33:24 PM] Tô Thành Công: uh
+[4:33:25 PM] Trần Tuấn Anh: e thay cái hiện thị trên máy e thôi! nó thay cả của các bác ak? :D
+[4:33:34 PM] Hung Eric: uh
+[4:33:34 PM] Tô Thành Công: de nhu cu di
+[4:33:35 PM] Hung Eric: :D
+[4:34:12 PM] *** Trần Tuấn Anh has changed the conversation topic to "OpenStack + Linux" ***
+[4:34:29 PM] *** Hung Eric added Hieu LE ***
+[4:34:53 PM] Hung Eric: e vua add Hieu Le vao nhe
+[4:35:01 PM] Tô Thành Công: o, xin chao !
+[4:35:14 PM] Hung Eric: Hieu Le cung la mem vietstack
+[4:35:20 PM] Tô Thành Công: (y)
+[4:35:23 PM] Hung Eric: moi nguoi co van de gi cu pm Hieu LE
+[4:35:28 PM] Hung Eric: pro lam
+[4:35:29 PM] Hung Eric: :D
+[4:35:41 PM] Thành VCCopr - Cloud Solution: càng ngày càng đông rồi
+[4:35:44 PM] Thành VCCopr - Cloud Solution: vui quá
+[4:35:47 PM] Tô Thành Công: @Tuan Anh: vu swift nhieu node co thong tin ko, THanh hom truoc hoi anh vu do
+[4:35:51 PM] Tô Thành Công: co gi 2 em trao doi nhe
+[4:36:01 PM] VDC-IT Thuc Tap - Tuan Anh: (handshake)
+[4:36:10 PM] Tô Thành Công: @Hieu truoc co san pham code cho CloudStack day
+[4:36:34 PM] Hung Eric: gioi thieu qua 1 chut ve Hieu Le
+[4:36:46 PM] Tô Thành Công: Luc nao moi Hieu trinh bay bai ve code trong OpenStack nhi
+[4:36:49 PM] Hung Eric: co tham nien debug bet nhe cho Dev
+[4:36:51 PM] Tô Thành Công: ok :) anh cung muon biet them
+[4:36:55 PM] Hung Eric: :D
+[4:37:01 PM] Tô Thành Công: (y) cai nay can
+[4:37:10 PM] Hung Eric: moi nguoi co van de gi ve code trong Openstack
+[4:37:17 PM] Hung Eric: cu Pm Hieu Leeeeeeeeeeeeeeeeeeeeeeeeee
+[4:37:19 PM] Hung Eric: :D
+[4:37:34 PM] Tô Thành Công: vu Swift co tin gi chua em
+[4:39:04 PM] VDC-IT Thuc Tap - Tuan Anh: Cái đấy e chưa thử nhưng e nghĩ là làm đc, vì khi tạo ring chỉ cần trỏ đến ip của server từng thằng
+[4:40:00 PM] Hung Eric: cha cha, a e o nha cap nhat cong nghe nhanh qua
+[4:40:04 PM] Hung Eric: good job
+[4:40:07 PM] Tô Thành Công: co docs gi cho vu nay ko, Tuan Anh update cho anh em di
+[4:40:25 PM] Hung Eric: neu duoc thi moi nguoi lam xong roi viet report de chung ta cung tham khao nhe
+[4:41:21 PM] Tô Thành Công: rieng ca nhan anh, co bai nao share bai do
+[4:41:22 PM] Thành VCCopr - Cloud Solution: (y)
+[4:41:47 PM] Tô Thành Công: dot truoc duoc Tuan va Hieu moi vu viet srcritp anh va Quan da lam
+[4:42:15 PM] Tô Thành Công: dot toi anh se viet them cho Juno = shell, co gi Quan lam vu satlstack nhe
+[4:42:33 PM] Hung Eric: yes, ngon lanh canh dao qua a ah
+[4:42:34 PM] Hung Eric: :D
+[4:42:43 PM] Tô Thành Công: cai github vietstack Tuan van cam tai khoan chu
+[4:42:53 PM] Hung Eric: yes
+[4:43:04 PM] Tô Thành Công: luc nao anh commit script thi approve nhe
+[4:43:09 PM] Hung Eric: okie a
+[4:43:23 PM] Hung Eric: sap toi e cung team Vietstack se soan ra nhung lab chuan
+[4:43:27 PM] Tô Thành Công: a, tin nua la vu HA cho Controller cung co ket qua roi
+[4:43:30 PM] Hung Eric: de a e cung tham khao va trien khai
+[4:43:31 PM] Tô Thành Công: (y)
+[4:43:37 PM] Hung Eric: ngon vai
+[4:43:39 PM] Hung Eric: :D
+[4:43:53 PM] Tô Thành Công: 2 HA proxy, 2 Controller, 3 Swift, 2 compute
+[4:43:56 PM | Edited 4:44:10 PM] Tô Thành Công: chay ngon voi nova-network, anh dang phoi hop lam cho neutron
+[4:46:13 PM] Hung Eric: okie a
+[4:46:16 PM] Hung Eric: ngon day ah
+[4:46:45 PM] Hung Eric: a day sang neutron dc thi mo hinh nay la co so ngon day anh
+[4:46:58 PM] Hung Eric: kha la chuan chi hien nay
+[4:47:18 PM] Hung Eric: chi can them 1 buoc nua la thiet ke chuong trinh quan ly toan bo he thong tren bang python
+[4:47:19 PM] Tô Thành Công: uh, truoc mat phai ngon HA controller da
+[4:47:23 PM] Hung Eric: thi la chuan luon
+[4:47:24 PM] Hung Eric: :D
+[4:47:29 PM] Tô Thành Công: sau do se tach tung serivce de HA
+[4:47:39 PM] Thành VCCopr - Cloud Solution: (y)
+[4:47:41 PM] Tô Thành Công: ban than L3 agent chua HA tot lam
+[4:47:54 PM] Tô Thành Công: van co nhung hinh thuc cui, active/passive
+[4:48:52 PM] Hung Eric: cai van de active/passive nay dung cho ha proxy thi duoc a anh
+[4:49:10 PM] Hung Eric: e ko nham thi he thong cua ericsson cung dang dung cai nay
+[4:49:13 PM] Tô Thành Công: ko, du di di nua thi ky thuat muon active /active
+[4:49:16 PM] Tô Thành Công: ko lam duoc thi phai cho
+[4:49:48 PM] Hung Eric: cai nay de e check lai thong tin da nhe
+[4:50:02 PM] Hung Eric: active/active se phat sinh van de do
+[4:50:10 PM] Hung Eric: de e check lai da nhe
+[4:50:20 PM] Hung Eric: co gi e se trao doi de a e hieu ro hon ve he thong
+[4:52:13 PM] Tô Thành Công: neu hien nay no chua support thi phai lam
+[4:52:14 PM] Tô Thành Công: uh
+[4:52:26 PM] Tô Thành Công: JUNO se co bai trinh bay HA Active/Active cho L3 Agent
+[4:52:33 PM] Tô Thành Công: oke, dan dan se ro
+[4:53:12 PM] Quân Hoàng: Juno nhiều cái hay ho phết
+[4:53:15 PM] Tô Thành Công: gio tap trung lam nhung cai core
+[4:53:15 PM] Quân Hoàng: :D
+[4:53:18 PM] Tô Thành Công: uh
+[4:53:22 PM] Tô Thành Công: nghe hap dan voai ra
+[4:53:24 PM] Tô Thành Công: :D
+[4:53:43 PM] Thành VCCopr - Cloud Solution: (y)
+[4:54:03 PM] Tô Thành Công: @Tuan Anh: có link nào về Switf ko em
+[4:54:03 PM | Edited 4:54:18 PM] Thành VCCopr - Cloud Solution: em vẫn đang bị băn khoăn vụ chia zone như thế nào đây :D
+[4:54:43 PM] Thành VCCopr - Cloud Solution: [16:43:54] Tô Thành Công: 2 HA proxy, 2 Controller, 3 Swift, 2 compute => có link hướng dẫn report chưa hả anh :D
+[4:54:48 PM] VDC-IT Thuc Tap - Tuan Anh: em chủ yếu vọc swift ở swiftstack
+[4:54:50 PM] VDC-IT Thuc Tap - Tuan Anh: https://swiftstack.com/openstack-swift/architecture/
+[4:54:51 PM] Tô Thành Công: Link sang ngay
+[4:55:02 PM] Tô Thành Công: ko, co cai link sang ngay anh dat van de chia cac node co ma
+[4:55:03 PM] Tô Thành Công: ?
+[4:55:06 PM] Tô Thành Công: @Thanh trien khai duoc chua
+[4:55:14 PM] Tô Thành Công: vu chia tung node rieng biet ay
+[4:55:26 PM] Tô Thành Công: @Tiến (tieungao) có thông tin gì vụ này ko
+[4:56:09 PM] Thành VCCopr - Cloud Solution: Em đang phải tìm tài liệu về vụ chia zone và perfomance
+[4:56:24 PM] Thành VCCopr - Cloud Solution: xong mới tiếp tục được
+[4:56:28 PM] Tô Thành Công: à
+[4:56:41 PM] Thành VCCopr - Cloud Solution: qua đưa hướng chia zone theo dung lượng disk
+[4:56:49 PM] Thành VCCopr - Cloud Solution: mà khoogn thuyết phục được sếp
+[4:56:51 PM] Thành VCCopr - Cloud Solution: :D
+[4:57:24 PM] Tô Thành Công: @Thanh: HA cu follow theo day
+[4:57:24 PM] Tô Thành Công: http://behindtheracks.com/2014/04/mysql-high-availability-with-galera-and-haproxy/
+[4:57:35 PM] Tô Thành Công: them may ky thuat bonding cho NIC nua la oke
+[4:57:42 PM] Thành VCCopr - Cloud Solution: Vâng
+[4:57:51 PM] Thành VCCopr - Cloud Solution: Ha thì em cũng theo cái này mà
+[4:58:01 PM] Tô Thành Công: http://joearnold.com/2011/06/27/swift-in-the-small/
+[5:00:18 PM] VDC-IT Thuc Tap - Tuan Anh: các anh hiểu được cơ chế hoạt động của ring ko? em đọc theo link này mà ko hiểu lắm
+[5:00:20 PM] VDC-IT Thuc Tap - Tuan Anh: https://julien.danjou.info/blog/2012/openstack-swift-consistency-analysis
+[5:01:01 PM] Thành VCCopr - Cloud Solution: cậu không hiểu chỗ nào
+[5:01:11 PM] Thành VCCopr - Cloud Solution: nói chung chung thế này hơi khó
+[5:01:56 PM] VDC-IT Thuc Tap - Tuan Anh: phần hash rồi cách nó sắp xếp các giá trị trong khi ánh xạ ấy ạ!
+[5:05:09 PM] Thành VCCopr - Cloud Solution: http://swdream.familug.org/2014/10/cach-thuc-lam-viec-cua-swift.html
+[5:05:27 PM] Thành VCCopr - Cloud Solution: đọc thử cái này mình dịch xem có hiểu hơn không
+[5:05:31 PM] Thành VCCopr - Cloud Solution: chưa dịch xong
+[5:05:54 PM] Thành VCCopr - Cloud Solution: public cậu đọc xong bảo tớ tớ lại rút về
+[5:05:55 PM] Thành VCCopr - Cloud Solution: :D
+[5:06:02 PM] VDC-IT Thuc Tap - Tuan Anh: ô hay quá có bản dịch :D anh cũng dịch từ links trên ạ?
+[5:06:11 PM] Thành VCCopr - Cloud Solution: thì là cái link ấy mà
+[5:06:15 PM] Thành VCCopr - Cloud Solution: mình tự dịch thôi
+[5:06:20 PM] VDC-IT Thuc Tap - Tuan Anh: (y)
+[5:09:09 PM] Thành VCCopr - Cloud Solution: chỗ nào bạn không hiểu thì paste ra đây nhé
+[5:09:25 PM] VDC-IT Thuc Tap - Tuan Anh: e đang đọc. thanks anh! :D
+[5:13:34 PM] VDC-IT Thuc Tap - Tuan Anh: phần hash là nó băm nội dung của object hả anh?
+[5:14:08 PM] Quân Hoàng: nó băm cái path thì phải
+[5:14:13 PM] Quân Hoàng: băm nội dung thì lâu quá nhờ
+[5:15:25 PM] Thành VCCopr - Cloud Solution: hash ở đây em hiểu là
+[5:16:53 PM] Thành VCCopr - Cloud Solution: nó sẽ như một nhà quản lý việc phân chia partition sao cho phù hợp với yêu cầu của mình, nó sẽ quy định xem object này nằm trên partiton nào
+[5:17:18 PM] VDC-IT Thuc Tap - Tuan Anh: chứ ko phải hàm băm ạ? @@
+[5:17:19 PM] Thành VCCopr - Cloud Solution: hoặc là chia số lượng partition như thế nào trên các node
+[5:17:30 PM] Thành VCCopr - Cloud Solution: theo mình hiểu kiểu vậy
+[5:17:38 PM] Quân Hoàng: hash là hàm băm đấy
+[5:17:45 PM] Thành VCCopr - Cloud Solution: khoogn biết có đúng không
+[5:17:48 PM] Quân Hoàng: using a hash of the data's storage location to determ
+[5:18:14 PM] Quân Hoàng:  using a hash of the data’s storage location to determine where in the cluster that data was located.
+[5:18:49 PM] VDC-IT Thuc Tap - Tuan Anh:  data’s storage location vậy là cái path ạ?
+[5:19:03 PM] Quân Hoàng: mình nghĩ vậy
+[5:19:47 PM] Quân Hoàng: ví dụ swift put local.iso /remote-container/remote.obj
+[5:19:55 PM] Quân Hoàng: thì nó sẽ hash cái đống  /remote-container/remote.obj
+[5:20:12 PM] Quân Hoàng: rồi kế hợp với số lượng bit mà mình cấu hình trong swift
+[5:20:18 PM] Quân Hoàng: để xác định vị trí lưu object
+[5:21:09 PM] Thành VCCopr - Cloud Solution: em có một ví dụ thế này ạ
+[5:21:15 PM] VDC-IT Thuc Tap - Tuan Anh: vậy là sau khi tính toán, nó sẽ add cái giá trị đấy vào file ...ring.gz phải ko ạ?
+[5:21:45 PM] Quân Hoàng: cái này mình chưa biết
+[5:21:46 PM] Quân Hoàng: ko dám chém
+[5:21:47 PM] Quân Hoàng: ;))
+[5:22:29 PM] Thành VCCopr - Cloud Solution: ví dụ khi anh upload một object lên -> object ấy sẽ có một hash nhất định. Khi người dùng muốn download object đó về => ring sẽ tìm object đó theo hash đó
+[5:23:17 PM] VDC-IT Thuc Tap - Tuan Anh: e up thử file lên, chọc vào storage node thì đúng là có thấy cái giá trị hash
+[5:24:11 PM] Thành VCCopr - Cloud Solution: ...ring.gz => chỉ lưu thông tin về disk nào nằm ở zone nào, object hay account server đó nằm ở node nào, object nào thôi chứ
+[5:25:39 PM] Thành VCCopr - Cloud Solution: Anh Tuấn cho ý kiến đi ạ
+[5:25:51 PM] Thành VCCopr - Cloud Solution: cứ để bọn em phán liều thế này :D
+[5:26:30 PM] VDC-IT Thuc Tap - Tuan Anh: (y)
+[5:26:50 PM] VDC-IT Thuc Tap - Tuan Anh: hash space thì hiểu thế nào hả anh?
+[5:29:51 PM] Thành VCCopr - Cloud Solution: theo anh nghĩ thì đó là một không gian chứa một đống abc gì đó, mà các đống này được phân biệt... theo mã hash
+[5:30:16 PM] Thành VCCopr - Cloud Solution: đống này có thể là các file object chẳng hạn
+[5:31:36 PM] Thành VCCopr - Cloud Solution: tất cả những cái này cần được các bậc tiền bối confirm ạ :D
+[5:32:14 PM] VDC-IT Thuc Tap - Tuan Anh: em hiều thế này: khi up 1 file lên, nó băm đường dẫn, chia modulo ..... rồi bắn về các node, vậy thì chỗ để chứa cái đống hash đấy là hash space phải ko anh?
+[5:33:30 PM] VDC-IT Thuc Tap - Tuan Anh: chờ tối các thánh xác nhận vậy :D
+[5:33:41 PM] Thành VCCopr - Cloud Solution:  hash space ở đây phải hiểu nó là một không gian đã
+[5:33:58 PM] Quân Hoàng: hash space này
+[5:34:02 PM] Thành VCCopr - Cloud Solution: còn cái không gian ấy chứa gì thì anh cũng không dám phán liều :D
+[5:34:03 PM] Quân Hoàng: là khái niệm ở đâu vậy
+[5:34:09 PM] Quân Hoàng: docs của Openstack có nói ko
+[5:34:25 PM] VDC-IT Thuc Tap - Tuan Anh: https://julien.danjou.info/blog/2012/openstack-swift-consistency-analysis
+[5:34:37 PM] VDC-IT Thuc Tap - Tuan Anh: trong nay` anh
+[5:34:51 PM] Thành VCCopr - Cloud Solution: In a simple world, if you wanted to store some objects and distribute them on 4 nodes, you would split your hash space in 4. You would have 4 partitions, and computing hash(object) modulo 4 would tell you where to store your object: on node 0, 1, 2 or 3.
+[5:35:08 PM] Hung Eric: det
+[5:35:11 PM] Hung Eric: a dang ban viec teo
+[5:35:15 PM] Thành VCCopr - Cloud Solution: :D
+[5:35:21 PM] Hung Eric: out of topic
+[5:35:27 PM] Hung Eric: tinh hinh u19 vietnam the nao roi
+[5:35:30 PM] Hung Eric: thang hay thua
+[5:35:30 PM] Hung Eric: :D
+[5:35:49 PM] Thành VCCopr - Cloud Solution: thua mà anh
+[5:35:51 PM] Thành VCCopr - Cloud Solution: :D
+[5:35:57 PM] Thành VCCopr - Cloud Solution: anh confirm cho bọn em đi
+[5:36:08 PM] Thành VCCopr - Cloud Solution: không lại cứ ngồi nói linh tinh
+[5:36:15 PM] VDC-IT Thuc Tap - Tuan Anh: :D
+[5:36:26 PM] Hung Eric: moi nguoi cu ban luan moi ra duoc van de chu
+[5:36:34 PM] Hung Eric: a cung chua trien khai thuc te hoan chinh
+[5:36:39 PM] Hung Eric: nen a cung ko dam chac chan
+[5:36:46 PM] Hung Eric: de a xem lai moi nguoi viet gi da
+[5:36:51 PM] Thành VCCopr - Cloud Solution: Đây là mấy cái định nghĩa mà anh
+[5:36:53 PM] Thành VCCopr - Cloud Solution: :D
+[5:37:28 PM] Thành VCCopr - Cloud Solution: mà  live:trananhkma:  tên gì ấy nhỉ
+[5:37:40 PM] Thành VCCopr - Cloud Solution: sinh năm bao nhieeu cho dễ goi :D
+[5:38:09 PM] VDC-IT Thuc Tap - Tuan Anh: e là Tuấn Anh, 91 anh ak! :D
+[5:38:39 PM] Thành VCCopr - Cloud Solution: à
+[5:38:44 PM] Thành VCCopr - Cloud Solution: thế anh là anh rồi :D
+[5:38:52 PM] VDC-IT Thuc Tap - Tuan Anh: live: trananhkma :D
+[5:39:03 PM] VDC-IT Thuc Tap - Tuan Anh: thì e thấy 90 rồi mà :D
+[5:39:23 PM] Thành VCCopr - Cloud Solution: VN thua 4 0 rồi
+[5:39:26 PM] Thành VCCopr - Cloud Solution: chán quá
+[5:39:26 PM] Thành VCCopr - Cloud Solution: :D
+[5:40:13 PM] VDC-IT Thuc Tap - Tuan Anh: e ko xem :D
+[5:40:33 PM] Thành VCCopr - Cloud Solution: anh vua vao cap nhat
+[5:40:53 PM] Thành VCCopr - Cloud Solution: đọc bài anh dịch cũng không rõ lắm nhỉ :D
+[5:42:01 PM] VDC-IT Thuc Tap - Tuan Anh: căn bản là chưa hiểu đc mấy cái khái niệm của họ a ak!
+[5:42:24 PM] Thành VCCopr - Cloud Solution: mệt nhờ
+[5:42:25 PM] Thành VCCopr - Cloud Solution: à
+[5:42:41 PM] Thành VCCopr - Cloud Solution: còm một cái muốn confirm lại
+[5:43:04 PM] VDC-IT Thuc Tap - Tuan Anh: ring hả anh? :D
+[5:43:05 PM] Hung Eric: vl
+[5:43:10 PM] Hung Eric: thua 4-0 ah
+[5:43:14 PM] Hung Eric: da dam kieu eo gi the nho
+[5:43:17 PM] Hung Eric: the nay nhe
+[5:43:18 PM] Thành VCCopr - Cloud Solution: swift-ring-builder object.builder add z1-10.0.0.1:6000R10.0.1.1:6003/sdb1 100
+[5:43:28 PM] VDC-IT Thuc Tap - Tuan Anh: thấy phòng e bảo 5-0 rồi
+[5:43:30 PM] Hung Eric: cai swift vi a ko co time de nghien cuu sau
+[5:43:33 PM] Thành VCCopr - Cloud Solution: cái 100 kia mọi người hiểu thế nào ạ
+[5:43:37 PM] Hung Eric: a noi qua the nay nhe
+[5:43:50 PM] Hung Eric: HASH PATH thi ban than a cung chua nghe bao h
+[5:43:55 PM] Hung Eric: HASH la HASH DATA
+[5:44:07 PM] Thành VCCopr - Cloud Solution: [17:43:50] luong huu tuan: HASH PATH thi ban than a cung chua nghe bao h => em cũng thế
+[5:44:14 PM | Edited 5:44:43 PM] Hung Eric: HASH hieu don gian la no se create nhung ban copy cua remote data 
+[5:44:42 PM] Thành VCCopr - Cloud Solution: chỉ có hash của file, data thôi :|
+[5:45:00 PM] Hung Eric: sau do no se dung nhung ban copy do se so sanh voi remote data
+[5:45:13 PM] Hung Eric: neu nhu 2 cai do ko dong nhau thi chung no se sync
+[5:45:24 PM] Hung Eric: day la phuong thuc hoat dong cua swift
+[5:45:29 PM] Hung Eric: con may cai bon e noi
+[5:45:37 PM] Hung Eric: a cung chua xem tai lieu nen cung chua biet the nao
+[5:45:38 PM] Hung Eric: :D
+[5:45:48 PM] Hung Eric: de tu tu ngam cuu cai da nhe
+[5:45:51 PM] Hung Eric: nhieu the qua
+[5:45:52 PM] VDC-IT Thuc Tap - Tuan Anh: (y)
+[5:46:04 PM] Thành VCCopr - Cloud Solution: (y)
+[5:46:09 PM] Quân Hoàng: chỉ có hash của file, data là sai nhé
+[5:46:13 PM] Quân Hoàng: hash nó áp lên string
+[5:46:20 PM] Quân Hoàng: file, data, hay file name
+[5:46:24 PM] Quân Hoàng: bản thân nó chỉ là string thôi
+[5:46:28 PM] Quân Hoàng: nên hash dc tuốt
+[5:46:51 PM] Quân Hoàng: thời gian tạo hash phụ thuộc vào dung lượng
+[5:47:05 PM] Quân Hoàng: nên e nghĩ nó ko dốt đến nỗi hash data đâu a
+[5:47:10 PM] Quân Hoàng: nó chỉ hash path thôi
+[5:47:35 PM] Thành VCCopr - Cloud Solution: em nghĩ là nó hash file
+[5:47:55 PM] Thành VCCopr - Cloud Solution: vì object up lên dưới dạng các file mà
+[5:48:03 PM] Quân Hoàng: nếu hash file
+[5:48:11 PM] Quân Hoàng: thì lúc có 1 cái GET object tới
+[5:48:18 PM] Quân Hoàng: làm sao nó biết dc object đó nằm ở đâu
+[5:48:23 PM] Quân Hoàng: khi không có hash
+[5:48:35 PM] Thành VCCopr - Cloud Solution: sạo lại không có hash ạ?
+[5:48:51 PM] Quân Hoàng: vì thằng gởi GET là thằng muốn dơwnload object
+[5:48:58 PM] Quân Hoàng: mà nó chỉ có cái path của object thôi
+[5:49:12 PM] Quân Hoàng: làm sao swift biết dc object đó đang được lưu ở đâu
+[5:50:26 PM] Thành VCCopr - Cloud Solution: anh ơi, path là dưới dạng directory tree đúng không ạ
+[5:50:31 PM] Quân Hoàng: ko
+[5:50:36 PM] VDC-IT Thuc Tap - Tuan Anh: ý a là băm đường dẫn để so sánh?
+[5:50:40 PM] Thành VCCopr - Cloud Solution: nhưng các object của swift lưu ngang hàng nhau mà
+[5:50:41 PM] Quân Hoàng: object store là flat-namespace
+[5:50:51 PM] Thành VCCopr - Cloud Solution: ở đây không có đường dẫn
+[5:50:55 PM] Quân Hoàng: người ta thêm dấu / cho dễ nhìn thôi
+[5:50:55 PM] Thành VCCopr - Cloud Solution: chỉ có tên file thôi
+[5:50:59 PM] Thành VCCopr - Cloud Solution: Vâng
+[5:51:07 PM] Quân Hoàng: chứ ko có tree gì cả
+[5:51:27 PM] Quân Hoàng: uhm
+[5:51:34 PM] Thành VCCopr - Cloud Solution: vâng, strong storage không có tree j cả
+[5:51:35 PM] Quân Hoàng: ý mình là băm cái dường dẫn của object
+[5:51:38 PM] Quân Hoàng: để save đó
+[5:51:39 PM] Thành VCCopr - Cloud Solution: ngang nhay hết
+[5:51:53 PM] Thành VCCopr - Cloud Solution: đó không p là tên file ạ
+[5:52:03 PM] Quân Hoàng: ko phải tên
+[5:52:09 PM] Thành VCCopr - Cloud Solution: ví dụ /abc/xyz
+[5:52:23 PM] Thành VCCopr - Cloud Solution: => tên của file đo
+[5:52:29 PM] Quân Hoàng: tên của object nhé
+[5:52:34 PM] Thành VCCopr - Cloud Solution: vì nó nằm trong một space chung
+[5:52:38 PM] Quân Hoàng: lên trên swift là ko có file nữa
+[5:52:39 PM] Quân Hoàng: :D
+[5:53:07 PM] Thành VCCopr - Cloud Solution: anh nói rõ hơn được không ạ
+[5:53:14 PM] Thành VCCopr - Cloud Solution: có thể chỗ này em hiểu sai gì rồi :D
+[5:53:19 PM] Thành VCCopr - Cloud Solution: [17:52:39] Quân Hoàng: lên trên swift là ko có file nữa
+[5:53:31 PM] Quân Hoàng: swift là object storage
+[5:53:33 PM] VDC-IT Thuc Tap - Tuan Anh: a ý bắt bẻ ấy mà :D
+[5:53:35 PM] Quân Hoàng: nó ko có khái niệm file
+[5:53:37 PM] Quân Hoàng: :D
+[5:53:38 PM] Quân Hoàng: ờ
+[5:53:48 PM] Quân Hoàng: phải chính từ giờ để sau này hiểu cho nó đúng
+[5:53:53 PM] VDC-IT Thuc Tap - Tuan Anh: (y)
+[5:53:53 PM] Hung Eric: :D
+[5:53:56 PM] Quân Hoàng: file chỉ có ở file system thôi
+[5:53:57 PM] Hung Eric: Quan noi dung day
+[5:54:04 PM] Hung Eric: tu ngu ky thuat la phai chuan
+[5:54:11 PM] Hung Eric: sai 1 teo la chet
+[5:54:16 PM] Thành VCCopr - Cloud Solution: Vậy nó lưu theo dạng gì ạ
+[5:54:17 PM] Thành VCCopr - Cloud Solution: vâng
+[5:54:26 PM] Thành VCCopr - Cloud Solution: em xin nhận chỗ sai này
+[5:54:34 PM] Quân Hoàng: nó lưu theo kiểu object
+[5:54:36 PM] Thành VCCopr - Cloud Solution: trước h em vẫn coi như nó ở dạng file
+[5:54:37 PM] Thành VCCopr - Cloud Solution: :D
+[5:54:40 PM] Hung Eric: truoc mat de co lo trinh chinh xac, tranh nhung hieu nham nhe:
+[5:54:41 PM] Quân Hoàng: object thì có data và name
+[5:54:43 PM] Quân Hoàng: hết rồi
+[5:54:43 PM] Quân Hoàng: :D
+[5:54:51 PM] Thành VCCopr - Cloud Solution: Vâng
+[5:54:56 PM] Quân Hoàng: nó sẽ dùng cái name để băm
+[5:54:58 PM] Hung Eric: 1. E thu tim hieu, Object la gi, Block la gi, khac nhau cho nao
+[5:55:05 PM] Hung Eric: di tu cai buoc co ban nhat len,
+[5:55:09 PM] Hung Eric: sau nay do mat goc
+[5:55:10 PM] Thành VCCopr - Cloud Solution: [17:54:57] Quân Hoàng: nó sẽ dùng cái name để băm => (y)
+[5:55:10 PM] Quân Hoàng: sau đó modulo gì đó để tìm chỗ để lưu object
+[5:55:24 PM] Quân Hoàng: sau này ai muốn get thì gởi cái name
+[5:55:32 PM] Quân Hoàng: rồi swift nó sẽ tìm dc object đó ngay
+[5:55:44 PM] Thành VCCopr - Cloud Solution: vâng, em cứ nhầm cái name là tên file :D
+[5:55:49 PM] Hung Eric: Quan noi y la dung
+[5:55:56 PM] Thành VCCopr - Cloud Solution: vậy thì cũng không có path mà anh
+[5:55:59 PM] Hung Eric: de a bo sung them cho no that ro rang
+[5:56:04 PM] Hung Eric: de moi nguoi hieu ro nhe
+[5:56:07 PM] Thành VCCopr - Cloud Solution: vâng ạ
+[5:56:15 PM] Quân Hoàng: ờ, ko có path :D
+[5:56:21 PM] Quân Hoàng: mình nhận sai (facepalm)
+[5:56:38 PM] VDC-IT Thuc Tap - Tuan Anh: :D
+[5:56:40 PM] Hung Eric: a chot the nay de a e hieu ro nay
+[5:56:45 PM] Thành VCCopr - Cloud Solution: Vâng
+[5:56:55 PM] Hung Eric: Quan no noi y la dung, chi co dieu nen ro rang hon 1 teo
+[5:57:11 PM] VDC-IT Thuc Tap - Tuan Anh: tên = http://abc/.../xyz?
+[5:57:45 PM] Hung Eric: Swift dung thuat toan MD5 hashing de bien doi path cua Swift Object thanh gia tri HASH
+[5:57:52 PM] Hung Eric: con md5 la gi moi nguoi tu tim hieu nhe
+[5:58:24 PM] Thành VCCopr - Cloud Solution: anh nói hết đi ạ
+[5:58:42 PM] Hung Eric: 1 phan(segment) cua cai HASH do duoc su dung de chi ra cai partition ma luu cai object
+[5:59:03 PM] Hung Eric: chi ra thoi nhe(specify) ay
+[5:59:28 PM] Hung Eric: con toan bo HASH se dc su dung de position cai object trong cai partition do
+[5:59:44 PM] Hung Eric: tuc la: 1 phan cua HASH de specify cai partion
+[6:00:04 PM] Hung Eric: toan bo HASH dc dung de position cai object nam trong cai partition noi tren
+[6:00:20 PM] Hung Eric: con gia tri, hay frame cua HASH the nao moi nguoi tu tim hieu nhe
+[6:00:24 PM] Hung Eric: cai nay tren mang nhieu ma
+[6:00:33 PM] Hung Eric: co thay ro them ti nao ko
+[6:00:34 PM] *** VDC-IT Thuc Tap - Tuan Anh added Le Quang Long ***
+[6:00:34 PM] Hung Eric: ?
+[6:00:49 PM] Quân Hoàng: rõ hơn rồi :D
+[6:00:53 PM] Hung Eric: okie
+[6:00:54 PM] Hung Eric: :D
+[6:01:14 PM] Thành VCCopr - Cloud Solution: Vâng
+[6:01:19 PM] Thành VCCopr - Cloud Solution: rõ rồi ạ
+[6:01:20 PM] VDC-IT Thuc Tap - Tuan Anh: tối về e ngâm lại :D
+[6:01:22 PM] Hung Eric: con cai GET hay PUSH trong qua tring user giao tiep voi swift thong qua internet
+[6:01:29 PM] Hung Eric: thi cai day lai tu tim hieu tiep nhe
+[6:01:30 PM] Hung Eric: :D
+[6:01:40 PM] VDC-IT Thuc Tap - Tuan Anh: e vừa add a Long lead team e :D
+[6:01:57 PM] Hung Eric: Quan no noi cai path chi la cai ma GET hay PUSH tra ve ay
+[6:02:15 PM] Hung Eric: okie e
+[6:02:19 PM] Hung Eric: a nghi the nay
+[6:02:26 PM] Thành VCCopr - Cloud Solution: May quá, có anh QUân với anh Tuấn chỉnh :D
+[6:02:38 PM] Hung Eric: lan sau moi nguoi add ai thi chung ta cung nhau tham khao truoc nhe
+[6:02:42 PM] Hung Eric: tranh add tuy tien
+[6:02:43 PM] Hung Eric: okie
+[6:02:45 PM] Hung Eric: :D
+[6:02:50 PM] VDC-IT Thuc Tap - Tuan Anh: vâng anh
+[6:02:53 PM] Hung Eric: okie e
+[6:02:59 PM] Hung Eric: thoi cac chu lam viec tiep di
+[6:03:03 PM] Hung Eric: de a xem u19 phat
+[6:03:04 PM] Hung Eric: :D
+[6:04:10 PM] Le Quang Long: hello a e
+[6:04:24 PM] Le Quang Long: :)
+[6:04:47 PM] Quân Hoàng: ^^
+[6:04:52 PM] Quân Hoàng: hello Long :D
+[7:54:15 PM] VDC-IT Thuc Tap - Tuan Anh: @a Thanh: a muốn triển riêng rẽ từng phần trên từng node để làm gì ak?
